@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | weaving pattern project</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=588 height=940 style="width: 588px; height: 940px; background: #231F20"></canvas>
+    <script src="Build/weaving_project_webbuild_5.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/weaving_project_webbuild_5.data",
+        frameworkUrl: "Build/weaving_project_webbuild_5.framework.js",
+        codeUrl: "Build/weaving_project_webbuild_5.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "camt",
+        productName: "weaving pattern project",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
